@@ -1,0 +1,34 @@
+{
+  "name": "intel-edl-support",
+  "displayName": "intel-edl-support",
+  "description": "enclave development languague of intel's SGX feature.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "edl",
+        "aliases": [
+          "Enclave",
+          "edl"
+        ],
+        "extensions": [
+          ".edl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "edl",
+        "scopeName": "source.edl",
+        "path": "./syntaxes/edl.tmLanguage.json"
+      }
+    ]
+  }
+}
